@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "neeha-first-bucket"
+	bucket = "akhila-100-bucket"
 }
 
 resource "aws_s3_bucket" "bucket2" {
@@ -12,10 +12,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "neeha-s3bucket-0412"
+    bucket         = "akhila-100-bucket"
     key            = "neeha/s3/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "neeha-0412-dblocks"
+    dynamodb_table = "akhila-0412-dblocks"
     encrypt        = true
   }
 }
